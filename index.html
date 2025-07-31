@@ -6,30 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fit Happens</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Poppins', 'sans-serif'],
-            },
-            colors: {
-              'primary-bg': '#1a1625',
-              'secondary-bg': '#262236',
-              'accent-1': '#ff5d73',
-              'accent-2': '#ff8e71',
-              'light-1': '#f1f1f1',
-              'medium-1': '#a9a4b3',
-              'success': '#2dd4bf',
-              'error': '#ff5d73',
-            },
-          },
-        },
-      }
-    </script>
     <style>
       @keyframes fadeIn {
         from { opacity: 0; transform: translateY(10px); }
@@ -38,34 +16,19 @@
       .fade-in {
         animation: fadeIn 0.5s ease-out forwards;
       }
-      /* Fix for browser autofill background and text color */
+      /* Fix for browser autofill background and text color /
       input:-webkit-autofill,
       input:-webkit-autofill:hover, 
       input:-webkit-autofill:focus, 
       input:-webkit-autofill:active {
-          -webkit-box-shadow: 0 0 0 30px #1a1625 inset !important; /* Corresponds to primary-bg */
-          -webkit-text-fill-color: #f1f1f1 !important; /* Corresponds to light-1 */
+          -webkit-box-shadow: 0 0 0 30px #1a1625 inset !important; / Corresponds to primary-bg /
+          -webkit-text-fill-color: #f1f1f1 !important; / Corresponds to light-1 */
           transition: background-color 5000s ease-in-out 0s;
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.1.0/",
-    "react": "https://esm.sh/react@^19.1.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
-    "@google/genai": "https://esm.sh/@google/genai@^1.10.0",
-    "react-router-dom": "https://esm.sh/react-router-dom@^7.7.0",
-    "recharts": "https://esm.sh/recharts@^3.1.0",
-    "chess.js": "https://esm.sh/chess.js@^1.4.0",
-    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@^2.45.0"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
+  </head>
   <body class="bg-primary-bg font-sans bg-gradient-to-br from-primary-bg to-[#1c1a2e]">
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>
